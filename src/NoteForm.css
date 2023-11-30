@@ -1,12 +1,10 @@
-/* NoteForm.css */
 .note-form-container {
-    margin-bottom: 20px;
-  }
-  
-  .note-form-container input,
-  .note-form-container textarea,
-  .note-form-container select,
-  .note-form-container button {
-    margin-bottom: 10px;
-  }
-  
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.note-form-container input,
+.note-form-container textarea,
+.note-form-container button {
+  margin: 5px;
+}

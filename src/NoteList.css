@@ -1,16 +1,20 @@
 /* NoteList.css */
+
+.note-list-container {
+  text-align: center;
+}
+
 .note-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .note-item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .note-item button {
-    margin-top: 5px;
-  }
-  
+  list-style: none;
+  padding: 0;
+}
+
+.note-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.note-item button {
+  margin-top: 5px;
+}
