@@ -1,5 +1,5 @@
 // App.js
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import NoteList from "./NoteList";
 import NoteForm from "./NoteForm";
 import "./App.css";
@@ -8,18 +8,7 @@ const App = () => {
   const [notes, setNotes] = useState([]);
   const [deletedNotes, setDeletedNotes] = useState([]);
 
-  useEffect(() => {
-    const fetchNotes = async () => {
-      // Simulate fetching notes from an API or storage on component mount
-      const response = await fetch("/api/notes");
-      const data = await response.json();
-
-      setNotes(data.notes);
-      setDeletedNotes(data.deletedNotes);
-    };
-
-    fetchNotes();
-  }, []);
+  
 
   const addNote = (newNote) => {
     const newNoteWithId = {
